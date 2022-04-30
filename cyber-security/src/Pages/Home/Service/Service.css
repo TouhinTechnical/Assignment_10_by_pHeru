@@ -1,0 +1,21 @@
+.singleService img{
+    width: 100%;
+}
+.singleService{
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+    margin-bottom: 30px;
+}
+.serviceTextContent{
+    position: absolute;
+    bottom: -190px;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background: #0000004f;
+    transition: all .5s ease;
+}
+.singleService:hover .serviceTextContent{
+    bottom: 0;
+}

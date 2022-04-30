@@ -38,6 +38,12 @@
 .text-EastBay{
     color: #4b5280;
 }
+.text-white{
+    color: #fff;
+}
+.text{
+    color: #faf8f8;
+}
 /* Fonts */
 .fw-700{
     font-weight: 700;
@@ -47,6 +53,12 @@
 }
 .fs-17{
     font-size: 17px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-50{
+    font-size: 50px;
 }
 .fs-62{
     font-size: 62px;

@@ -5,11 +5,12 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import Page404 from './Pages/404Page/Page404';
 import About from './Pages/About/About';
-import Service from './Pages/Home/Service/Service';
+import Services from './Pages/Home/Services/Services';
 import Blogs from './Pages/Blogs/Blogs';
 import SignIn from './Pages/SignIn/SignIn';
 import SignUp from './Pages/SignUp/SignUp';
 import ContactUs from './Pages/ContactUs/ContactUs';
+import Checkout from './Pages/Checkout/Checkout';
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/home' element={<Home/>} />
         <Route path='/about' element={<About/>} />
-        <Route path='/service' element={<Service/>} />
+        <Route path='/services' element={<Services/>} />
+        <Route path='/service/:serviceId' element={<Checkout/>} />
         <Route path='/blogs' element={<Blogs/>} />
         <Route path='contactus' element={<ContactUs/>}/>
         <Route path='/signin' element={<SignIn/>} />

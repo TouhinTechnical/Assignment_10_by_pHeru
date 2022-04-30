@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Website Scanning",
+        "price": "$300",
+        "description": "The Website Vulnerability Scanner is a custom tool written by our team in order to quickly assess the security of a web application.It is a full-blown web application scanner.",
+        "img": "https://i.ibb.co/9GyFLq4/services-1.png"
+    },
+    {
+        "id": 2,
+        "name": "Malware Removal",
+        "price": "$200",
+        "description": "A virus removal is the process of manually or automatically deleting or disinfecting a computer virus, malware or other malicious program on a computing device.",
+        "img": "https://i.ibb.co/7NjvRpq/services-2.png"
+    },
+    {
+        "id": 3,
+        "name": "Cloud Security",
+        "price": "$350",
+        "description": "Cloud security, also known as cloud computing security, is a collection of security measures designed to protect cloud-based infrastructure, applications, and data.",
+        "img": "https://i.ibb.co/dpLQqKL/services-3.png"
+    }
+]

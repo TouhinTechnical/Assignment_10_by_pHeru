@@ -25,7 +25,7 @@ const Header = () => {
                                     <Nav className="justify-content-end flex-grow-1 pe-3 fw-700 fs-17">
                                         <Nav.Link as={CustomLink} to="/home" className='text-BlackRussian'>Home</Nav.Link>
                                         <Nav.Link as={CustomLink} to="/about" className='text-BlackRussian'>About</Nav.Link>
-                                        <Nav.Link as={CustomLink} to="/service" className='text-BlackRussian'>Service</Nav.Link>
+                                        <Nav.Link as={CustomLink} to="/services" className='text-BlackRussian'>Services</Nav.Link>
                                         <Nav.Link as={CustomLink} to="/blogs" className='text-BlackRussian'>Blogs</Nav.Link>
                                         <Nav.Link as={CustomLink} to="/contactus" className='text-BlackRussian'>Contact Us</Nav.Link>
                                     </Nav>
