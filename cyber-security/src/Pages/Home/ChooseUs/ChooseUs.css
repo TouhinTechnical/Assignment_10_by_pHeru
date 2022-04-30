@@ -1,0 +1,10 @@
+.chooseImg img{
+    width: 100%;
+}
+.singleChooseSkillContent {
+    width: 390px;
+    height: 125px;
+    padding: 50px;
+    align-items: center;
+    margin: 20px;
+}
