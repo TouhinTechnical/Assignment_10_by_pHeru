@@ -1,0 +1,24 @@
+.footerSection {
+    background-color: #ebedf0;
+    border-top: 1px solid #ebedf0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.copyright span a{
+    text-decoration: none;
+    color: #e21f36;
+    font-weight: 700;
+}
+.privacyPart{
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    font-weight: 700;
+    text-align: right;
+}
+.privacyPart .pri1:hover,
+.privacyPart .pri2:hover{
+    color: #e21f36;
+}
