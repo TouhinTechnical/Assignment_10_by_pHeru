@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+/* Borders */
+.border-bottom{
+    border-bottom: 1px solid #000219;
+}
+/* Height */
+.h-95{
+    height: 95px;
+}
+.ptb-28{
+    padding: 28px 0;
+}
+/* Colors */
+.text-BlackRussian{
+    color: #000219;
+}
+/* Fonts */
+.fw-700{
+    font-weight: 700;
+}
+.fs-17{
+    font-size: 17px;
+}
