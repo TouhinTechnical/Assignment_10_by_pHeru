@@ -27,6 +27,7 @@ const Header = () => {
                                         <Nav.Link as={CustomLink} to="/about" className='text-BlackRussian'>About</Nav.Link>
                                         <Nav.Link as={CustomLink} to="/service" className='text-BlackRussian'>Service</Nav.Link>
                                         <Nav.Link as={CustomLink} to="/blogs" className='text-BlackRussian'>Blogs</Nav.Link>
+                                        <Nav.Link as={CustomLink} to="/contactus" className='text-BlackRussian'>Contact Us</Nav.Link>
                                     </Nav>
                                     <Nav className="justify-content-end flex-grow-1 pe-3">
                                         <Nav.Link as={CustomLink} to="/signin" className='btn btn-outline-primary fs-17 fw-700 text-BlackRussian'>Sign In</Nav.Link>
