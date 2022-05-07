@@ -1,10 +1,45 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Form } from 'react-bootstrap';
 import CustomLink from '../Shared/CustomLink/CustomLink';
 import SigninImage from '../../images/SignIn.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const SignIn = () => {
+    const emailRef = useRef('');
+    const passwordRef = useRef('');
+    // Sign In authentication
+    const [signInWithEmailAndPassword, user] = useSignInWithEmailAndPassword(auth);
+    // Navigate
+    const navigate = useNavigate();
+    const location = useLocation();
+    let form = location.state?.form?.pathname || "/";
+    if(user){
+        navigate(form, {replace: true});
+    }
+    // Reset Password authentication
+    const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
+    // Sign In
+    const handlerSignIn = event =>{
+        event.preventDefault();
+        const email = emailRef.current.value;
+        const password = passwordRef.current.value;
+        signInWithEmailAndPassword(email, password);
+    }
+    // Reset Password
+    const resetPassword = async() =>{
+        const email = emailRef.current.value;
+        if(email){
+            await sendPasswordResetEmail(email);
+            toast('Sent email');
+        }
+        else{
+            toast('Please enter your email address');
+        }
+    }
     return (
         <>
             <div className='signinBanner sign-bg'>
@@ -34,18 +69,20 @@ const SignIn = () => {
                         <div className="col-6">
                             <div className="signinFrom mt-5">
                                 <h2 className='fw-700 text-BlackRussian mb-4'>Sign In</h2>
-                                <Form>
+                                <Form onSubmit={handlerSignIn}>
                                     <Form.Group className="mb-3" controlId="formBasicEmail">
                                         <Form.Label>Email address</Form.Label>
-                                        <Form.Control type="email" placeholder="Enter Your email address" />
+                                        <Form.Control type="email" ref={emailRef} placeholder="Enter Your email address" />
                                     </Form.Group>
                                     <Form.Group className="mb-3" controlId="formBasicPassword">
                                         <Form.Label>Password</Form.Label>
-                                        <Form.Control type="password" placeholder="Enter Your Password" />
+                                        <Form.Control type="password" ref={passwordRef} placeholder="Enter Your Password" />
                                     </Form.Group>
                                     <input className='btn btn-primary w-100' type="submit" value= "Sign In"/>
                                 </Form>
                                 <p className='mt-3'>Not A Cyber Security Member!! Create a new account ? <Link to='/signup' className='text-primary pe-auto text-decoration-none'>Please Sign Up</Link></p>
+                                <p>Lost A Password Don't Worry!!<button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button></p>
+                                <ToastContainer/>
                             </div>
                         </div>
                         <div className="col-6">
