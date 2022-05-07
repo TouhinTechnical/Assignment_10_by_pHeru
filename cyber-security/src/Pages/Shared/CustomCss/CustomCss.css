@@ -28,6 +28,10 @@
 .bg-PearlBush{
     background: #eae1d6;
 }
+.sign-bg{
+    background: url('../../../images/signupImg.png') no-repeat center center;
+    background-size: 100%;
+}
 /* Colors */
 .text-BlackRussian{
     color: #000219;
