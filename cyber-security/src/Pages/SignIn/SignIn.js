@@ -16,20 +16,23 @@ const SignIn = () => {
     // Navigate
     const navigate = useNavigate();
     const location = useLocation();
-    let form = location.state?.form?.pathname || "/";
+    let form = location.state?.form?.pathname || '/services';
     if(user){
         navigate(form, {replace: true});
     }
-    // Reset Password authentication
-    const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
-    // Sign In
+    const navigateSignup = () =>{
+        navigate('/signup');
+    }
+    // Sign In Function
     const handlerSignIn = event =>{
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
         signInWithEmailAndPassword(email, password);
     }
-    // Reset Password
+    // Reset Password authentication
+    const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
+    // Reset Password Function
     const resetPassword = async() =>{
         const email = emailRef.current.value;
         if(email){
@@ -80,7 +83,7 @@ const SignIn = () => {
                                     </Form.Group>
                                     <input className='btn btn-primary w-100' type="submit" value= "Sign In"/>
                                 </Form>
-                                <p className='mt-3'>Not A Cyber Security Member!! Create a new account ? <Link to='/signup' className='text-primary pe-auto text-decoration-none'>Please Sign Up</Link></p>
+                                <p className='mt-3'>Not A Cyber Security Member!! Create a new account ? <Link to='/signup' className='text-primary pe-auto text-decoration-none' onClick={navigateSignup}>Please Sign Up</Link></p>
                                 <p>Lost A Password Don't Worry!!<button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button></p>
                                 <ToastContainer/>
                             </div>

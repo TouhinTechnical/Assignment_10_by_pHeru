@@ -5,7 +5,7 @@ const Checkout = () => {
     const {serviceId} = useParams();
     return (
         <div>
-            <h2>this is Checkout page: {serviceId}</h2>
+            <h2 className='text-center'>This is Checkout page: {serviceId}</h2>
         </div>
     );
 };
