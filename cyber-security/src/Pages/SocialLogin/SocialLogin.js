@@ -6,13 +6,13 @@ import { useSignInWithApple, useSignInWithFacebook, useSignInWithGoogle } from '
 import auth from '../../firebase.init';
 import { useNavigate } from 'react-router-dom';
 const SocialLogin = () => {
+    // social login authentication
     const [signInWithGoogle, userGoogle, errorGoogle] = useSignInWithGoogle(auth);
     const [signInWithApple, userApple, errorApple] = useSignInWithApple(auth);
     const [signInWithFacebook, userFacebook, errorFacebook] = useSignInWithFacebook(auth);
+    // Navigate
     const navigate = useNavigate();
     // Error message show
-
-    // aikane facebook & apple thik korlam kintu login hosse nah aktu ki problem holo check kore feedback diyen(admin vaiya)
     let errorElement;
     if (errorGoogle || errorApple || errorFacebook){
         errorElement = <p className="text-danger">Error: {errorGoogle?.message} {errorApple?.message} {errorFacebook?.message}</p>

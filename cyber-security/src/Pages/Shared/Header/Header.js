@@ -18,7 +18,7 @@ const Header = () => {
     }
     return (
         <>
-            <div className='h-95 ptb-28 border-bottom' bg="light">
+            <div className='h-95 ptb-28 border-bottom sticky-top' bg="light">
                 {['lg'].map((expand) => (
                     <Navbar key={expand} expand={expand}>
                         <Container>

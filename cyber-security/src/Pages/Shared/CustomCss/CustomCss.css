@@ -20,6 +20,9 @@
 .ptb-100{
     padding: 100px 0;
 }
+.p-30{
+    padding: 30px;
+}
 /* Margin */
 .mtb-30{
     margin: 30px 0;
@@ -28,8 +31,15 @@
 .bg-PearlBush{
     background: #eae1d6;
 }
+.bg-EastBay{
+    background: #4b5280;
+}
 .sign-bg{
     background: url('../../../images/signupImg.png') no-repeat center center;
+    background-size: 100%;
+}
+.bg-error404{
+    background: url('../../../images/ErrorPage.png') no-repeat center center;
     background-size: 100%;
 }
 /* Colors */

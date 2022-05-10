@@ -1,0 +1,10 @@
+.about-img img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 5px 7px 47px 11px rgba(63, 62, 62, 0.6);
+}
