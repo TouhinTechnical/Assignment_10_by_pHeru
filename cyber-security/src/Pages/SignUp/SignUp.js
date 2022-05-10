@@ -8,6 +8,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const SignUp = () => {
     // check label (useState)
@@ -100,6 +101,7 @@ const SignUp = () => {
                                     <input disabled={!agree} className='btn btn-primary w-100' type="submit" value= "Sign Up"/>
                                 </Form>
                                 <p className='mt-3'>Already have a account ? <Link to='/signin' className='text-primary pe-auto text-decoration-none' onClick={navigateSignin}>Please Sign In</Link></p>
+                                <SocialLogin/>
                                 <ToastContainer/>
                             </div>
                         </div>
