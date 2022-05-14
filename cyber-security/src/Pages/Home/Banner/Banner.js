@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Image from '../../../images/Banner/banner-img.png';
 import '../../Shared/CustomCss/CustomCss.css';
+import './Banner.css';
 const Banner = () => {
     return (
         <section className='bannerArea ptb-100 bg-PearlBush'>
@@ -17,7 +18,7 @@ const Banner = () => {
                     </div>
                     <div className="col-6">
                         <div className="imgContent ms-3">
-                            <img src={Image} alt="Photu" />
+                            <img style={{width: '100%'}} src={Image} alt="Photu" />
                         </div>
                     </div>
                 </div> {/* Row */}

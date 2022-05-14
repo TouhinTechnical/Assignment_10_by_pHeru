@@ -1,6 +1,7 @@
 import React from 'react';
 import { Accordion } from 'react-bootstrap';
 import blogImage from '../../images/faq-img.png';
+import './Blogs.css';
 
 const Blogs = () => {
     return (

@@ -19,3 +19,62 @@
 .singleService:hover .serviceTextContent{
     bottom: 0;
 }
+
+/* Responsive */
+/* Laptop */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .serviceTextContent {
+        bottom: -215px;
+    }
+}
+/*  Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .serviceSection .fs-50 {
+        font-size: 40px;
+    }
+    .serviceSection.ptb-100{
+        padding: 60px 0;
+    }
+    .serviceSection .serviceContent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .serviceTextContent.p-3 {
+        padding: .5rem !important;
+    }
+}
+/* Large Moblie & lansapce tablet */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .serviceSection .fs-50 {
+        font-size: 32px;
+    }
+    .serviceSection.ptb-100{
+        padding: 60px 0;
+    }
+    .serviceSection .serviceContent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .serviceTextContent {
+        bottom: -235px;
+    }
+    .serviceTextContent.p-3 {
+        padding: 10px !important;
+    }
+}
+/* Small Device */
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    .serviceSection .serviceContent {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .serviceTextContent {
+        bottom: 0;
+    }
+    .serviceTextContent.p-3 {
+        padding: 10px !important;
+    }
+    .serviceSection .fs-50 {
+        font-size: 22px;
+    }
+    .serviceSection.ptb-100{
+        padding: 60px 0;
+    }
+}

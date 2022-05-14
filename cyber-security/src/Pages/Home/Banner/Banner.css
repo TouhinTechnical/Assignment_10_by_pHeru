@@ -1,0 +1,48 @@
+/* Laptop */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .bannerArea .textContent .fs-62 {
+        font-size: 50px;
+    }
+}
+/*  Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .bannerArea .col-6 {
+        width: 100%;
+    }
+    .bannerArea .textContent {
+        margin-bottom: 60px;
+    }
+    .bannerArea.ptb-100{
+        padding: 30px 0;
+    }
+}
+/* Large Moblie & lansapce tablet */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .bannerArea .col-6 {
+        width: 100%;
+    }
+    .bannerArea .textContent {
+        margin-bottom: 60px;
+    }
+    .bannerArea.ptb-100{
+        padding: 30px 0;
+    }
+    .bannerArea .textContent .fs-62 {
+        font-size: 55px;
+    }
+}
+/* Small Device */
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    .bannerArea .col-6 {
+        width: 100%;
+    }
+    .bannerArea.ptb-100{
+        padding: 30px 0;
+    }
+    .bannerArea .textContent {
+        margin-bottom: 60px;
+    }
+    .bannerArea .textContent .fs-62 {
+        font-size: 38px;
+    }
+}

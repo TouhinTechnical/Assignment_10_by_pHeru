@@ -8,3 +8,15 @@
     -o-border-radius: 50%;
     box-shadow: 5px 7px 47px 11px rgba(63, 62, 62, 0.6);
 }
+
+/* Responsive */
+@media only screen and (max-width: 767px){
+    .about-section .col-6{
+        width: 100%;
+    }
+    .about-section .about-img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+}

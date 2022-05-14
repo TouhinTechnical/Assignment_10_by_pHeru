@@ -8,6 +8,7 @@ import auth from '../../firebase.init';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import './SignIn.css';
 
 const SignIn = () => {
     const emailRef = useRef('');

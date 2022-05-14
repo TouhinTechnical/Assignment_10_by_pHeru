@@ -41,6 +41,8 @@
 .bg-error404{
     background: url('../../../images/ErrorPage.png') no-repeat center center;
     background-size: 100%;
+    width: 100%;
+    height: auto;
 }
 /* Colors */
 .text-BlackRussian{

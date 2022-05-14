@@ -24,7 +24,7 @@ const ChooseUs = () => {
                                 <div className="col-6">
                                     <div className="singleChooseSkillContent d-flex">
                                         <div className="iconimg">
-                                            <img src={Icon1} alt="" />
+                                            <img style={{width: '100%'}} src={Icon1} alt="" />
                                         </div>
                                         <div className="chooseSkillContentText ms-5">
                                             <h1 className="fs-40 fw-900">365</h1>

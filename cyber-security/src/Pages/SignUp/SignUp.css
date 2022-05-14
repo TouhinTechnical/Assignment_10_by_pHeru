@@ -22,3 +22,38 @@
 .signupImg img{
     width: 100%;
 }
+/* Resposive */
+
+/*  Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .signup .col-6{
+        width: 100%;
+    }
+    .signup.ptb-100{
+        padding: 30px 0;
+    }
+    .signup .signupImg{
+        margin-top: 40px;
+    } 
+}
+/* Large Moblie & lansapce tablet & Small Device */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .signupBanner-text {
+        padding: 20px 0 !important;
+        justify-content: center !important;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .bannerTitle.fs-40 {
+        font-size: 28px;
+    }
+    .signup .col-6{
+        width: 100%;
+    }
+    .signup.ptb-100{
+        padding: 30px 0;
+    }
+    .signupImg{
+        margin-top: 40px;
+    }
+}

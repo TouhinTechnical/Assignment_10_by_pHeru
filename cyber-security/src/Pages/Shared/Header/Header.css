@@ -5,3 +5,54 @@
 .sticky-top {
     background: rgba(248, 247, 247, 0.521);
 }
+
+/* Responsive */
+
+/* Laptop */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .container{
+        max-width: 960px;
+    }
+}
+/*  Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container{
+        max-width: 720px;
+    }
+    .signUpBtn.ms-4 {
+        margin-left: 0 !important;
+    }
+    .signUpBtn.mt-10 {
+        margin-top: 10px !important;
+    }
+}
+/* Large Moblie & lansapce tablet */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .container{
+        max-width: 550px;
+    }
+    .signUpBtn.ms-4 {
+        margin-left: 0 !important;
+    }
+    .signUpBtn.mt-10 {
+        margin-top: 10px !important;
+    }
+}
+/* Small Device */
+@media only screen and (min-width: 320px) and (max-width: 575px){
+    .container{
+        max-width: 100%;
+    }
+    .navbar-brand {
+        margin-right: .4rem;
+    }
+    .navbar-toggler {
+        padding: .3rem .3rem;
+    }
+    .signUpBtn.ms-4 {
+        margin-left: 0 !important;
+    }
+    .signUpBtn.mt-10 {
+        margin-top: 10px !important;
+    }
+}

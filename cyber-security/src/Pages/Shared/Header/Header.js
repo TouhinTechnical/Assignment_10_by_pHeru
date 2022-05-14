@@ -46,7 +46,7 @@ const Header = () => {
                                             :
                                             <>
                                                 <Nav.Link as={CustomLink} to="/signin" className='btn btn-outline-primary fs-17 fw-700 text-BlackRussian'>Sign In</Nav.Link>
-                                                <Nav.Link as={CustomLink} to="/signup" className='btn btn-info ms-4 fs-17 fw-700 text-BlackRussian'>Sign Up</Nav.Link>
+                                                <Nav.Link as={CustomLink} to="/signup" className='btn btn-info ms-4 fs-17 fw-700 text-BlackRussian signUpBtn mt-10'>Sign Up</Nav.Link>
                                             </>  
                                         }
                                     </Nav>
